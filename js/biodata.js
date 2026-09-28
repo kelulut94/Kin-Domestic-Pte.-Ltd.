@@ -54,7 +54,7 @@
     if (allHelpers.length === 0) {
       grid.innerHTML =
         '<p class="empty">No helpers are currently available. Please check back soon, ' +
-        'or <a href="index.html#contact">contact us</a> and we will let you know when new ' +
+        'or <a href="contact.html">contact us</a> and we will let you know when new ' +
         "profiles are added.</p>";
       countEl.textContent = "";
       return;
@@ -62,7 +62,7 @@
     if (list.length === 0) {
       grid.innerHTML =
         '<p class="empty">No helpers match these filters. Try removing a filter, or ' +
-        '<a href="index.html#contact">contact us</a> for help.</p>';
+        '<a href="contact.html">contact us</a> for help.</p>';
     } else {
       grid.innerHTML = list.map(card).join("");
     }
@@ -82,6 +82,23 @@
     });
   }
 
+  // Pre-select filters from links such as biodata.html?type=fresh&skill=cooking
+  function applyUrlFilters() {
+    var params = new URLSearchParams(window.location.search);
+    var type = params.get("type");
+    var nat = params.get("nationality");
+    if (type && form.elements.type.querySelector('option[value="' + CSS.escape(type) + '"]')) {
+      form.elements.type.value = type;
+    }
+    if (nat && natSelect.querySelector('option[value="' + CSS.escape(nat) + '"]')) {
+      natSelect.value = nat;
+    }
+    params.getAll("skill").forEach(function (skill) {
+      var box = form.querySelector('input[name="skill"][value="' + CSS.escape(skill) + '"]');
+      if (box) box.checked = true;
+    });
+  }
+
   form.addEventListener("change", render);
   form.addEventListener("reset", function () { setTimeout(render, 0); });
 
@@ -89,11 +106,12 @@
     .then(function (helpers) {
       allHelpers = helpers.filter(function (h) { return h.status === "available"; });
       populateNationalities();
+      applyUrlFilters();
       render();
     })
     .catch(function () {
       grid.innerHTML =
         '<p class="empty">Sorry, we could not load helper profiles right now. Please try again later ' +
-        'or <a href="index.html#contact">contact us</a>.</p>';
+        'or <a href="contact.html">contact us</a>.</p>';
     });
 })();
