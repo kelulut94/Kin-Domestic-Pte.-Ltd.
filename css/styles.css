@@ -177,6 +177,26 @@ table.pf { margin-top: 12px; }
 .experience { margin: 0; padding-left: 18px; }
 .experience li { margin-bottom: 8px; }
 
+/* Helper video */
+.badge--video { background: var(--plum); color: #fff; }
+.helper-video { width: 100%; max-height: 520px; border-radius: 12px; background: #000; }
+.video-embed { position: relative; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; background: #000; }
+.video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* Enquiry form */
+.enquire { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: start; }
+.enquiry-form .grid-2 { gap: 16px 20px; }
+.field { margin: 0 0 16px; border: 0; padding: 0; }
+.field label, .field legend { display: block; font-weight: 600; font-size: .92rem; margin-bottom: 6px; }
+.field input, .field select, .field textarea { width: 100%; padding: 11px 12px; border: 1px solid var(--line); border-radius: 10px; font: inherit; background: #fff; color: var(--ink); }
+.field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--rose); outline-offset: 1px; border-color: var(--rose); }
+.field .checks { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.field .checks label { font-weight: 400; margin: 0; }
+.req { color: var(--rust); }
+.small { font-size: .88rem; }
+.form-error { background: #fdecea; color: #8a2a1c; padding: 10px 14px; border-radius: 10px; }
+.profile__aside .btn-ghost { text-align: center; }
+
 /* Footer */
 .site-footer { background: var(--ink); color: #d9cfcc; padding: 48px 0 20px; font-size: 14px; }
 .site-footer .cols { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 24px; }
@@ -199,7 +219,7 @@ table.pf { margin-top: 12px; }
   .logo img { height: 58px; }
 }
 @media (max-width: 900px) {
-  .hero .wrap, .grid-2, .grid-3, .cats, .pk { grid-template-columns: 1fr; }
+  .hero .wrap, .grid-2, .grid-3, .cats, .pk, .enquire { grid-template-columns: 1fr; }
   .hero .ph { max-width: 360px; }
   .usp { grid-template-columns: 1fr 1fr; }
   .steps { grid-template-columns: 1fr 1fr; }

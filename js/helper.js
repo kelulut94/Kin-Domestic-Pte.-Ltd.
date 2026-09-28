@@ -14,6 +14,25 @@
     return v === true ? "Yes" : v === false ? "No" : v;
   }
 
+  // "video" may be a local MP4 (e.g. videos/helpers/KD-1824.mp4) or a YouTube link.
+  function videoSection(h) {
+    if (!h.video) return "";
+    var yt = /(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/)|youtu\.be\/)([\w-]{11})/.exec(h.video);
+    var player;
+    if (yt) {
+      player = '<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/' + yt[1] +
+        '" title="Introduction video of ' + H.escapeHtml(h.firstName) + '" loading="lazy" ' +
+        'allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>';
+    } else if (/^videos\/[\w.\/-]+\.(mp4|webm|mov)$/i.test(h.video)) {
+      player = '<video class="helper-video" controls playsinline preload="metadata" src="' +
+        H.escapeHtml(h.video) + '"' + (h.photo ? ' poster="' + H.escapeHtml(h.photo) + '"' : "") +
+        '>Your browser cannot play this video.</video>';
+    } else {
+      return "";
+    }
+    return "<section><h2>Introduction video</h2>" + player + "</section>";
+  }
+
   function notFound(msg) {
     document.title = "Helper not found | Kin Domestic";
     root.innerHTML =
@@ -49,6 +68,8 @@
           H.escapeHtml(h.status) + "</strong>. Contact us for similar profiles.</p>"
       : "";
 
+    var videoHtml = videoSection(h);
+
     var sampleNote = h.sample
       ? '<p class="sample-note">SAMPLE PROFILE – fictional data for layout testing.</p>'
       : "";
@@ -63,7 +84,9 @@
           statusNote +
           (h.status === "available"
             ? '<a class="button button--whatsapp" target="_blank" rel="noopener" href="' +
-                H.escapeHtml(H.whatsappLink(h)) + '">Enquire about this helper</a>'
+                H.escapeHtml(H.whatsappLink(h)) + '">Enquire about this helper</a>' +
+              '<a class="btn btn-ghost" href="enquire.html?helper=' + encodeURIComponent(h.id) +
+                '">Send an enquiry form</a>'
             : "") +
         "</div>" +
         '<div class="profile__main">' +
@@ -71,6 +94,8 @@
           "<h1>" + H.escapeHtml(h.firstName) + "</h1>" +
           '<p><span class="badge badge--' + H.escapeHtml(h.type) + '">' +
             H.escapeHtml(H.TYPE_LABELS[h.type] || h.type) + "</span></p>" +
+
+          videoHtml +
 
           "<section><h2>Basic particulars</h2><table class=\"facts\">" +
             row("Age", h.age) +

@@ -23,7 +23,8 @@
             '<p class="helper-card__meta">' + H.escapeHtml(h.age) + " yrs · " +
               H.escapeHtml(h.nationality) + "</p>" +
             '<p><span class="badge badge--' + H.escapeHtml(h.type) + '">' +
-              H.escapeHtml(H.TYPE_LABELS[h.type] || h.type) + "</span></p>" +
+              H.escapeHtml(H.TYPE_LABELS[h.type] || h.type) + "</span>" +
+              (h.video ? ' <span class="badge badge--video">&#9654; Video</span>' : "") + "</p>" +
             '<ul class="chips">' + skills + "</ul>" +
             '<span class="helper-card__cta">View biodata &rarr;</span>' +
           "</div>" +

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enquiry Form | Kin Domestic</title>
+  <meta name="description" content="Send Kin Domestic an enquiry about hiring a domestic helper. Tell us your household's needs and we'll recommend suitable helpers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Marcellus&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="css/styles.css?v=4">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="topbar"><div class="wrap">
+    <span>EA Licence No. 26C3706</span>
+    <span>WhatsApp: <a href="https://wa.me/6593757030">9375 7030</a> &nbsp;·&nbsp; Email: <a href="mailto:hello@kindomestic.com">hello@kindomestic.com</a></span>
+  </div></div>
+  <header class="site-header"><div class="wrap">
+    <a class="logo" href="index.html"><img src="images/logo.png" alt="Kin Domestic – Care that feels like kin" width="613" height="450"></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="has-sub"><a href="biodata.html">Find a Helper</a>
+          <div class="sub">
+            <a href="biodata.html?type=fresh">Fresh Helpers</a>
+            <a href="biodata.html?type=experienced">Experienced Helpers</a>
+            <a href="biodata.html?type=transfer">Transfer Helpers</a>
+            <a href="biodata.html">View all biodata</a>
+          </div></li>
+        <li class="has-sub"><a href="services.html">Services</a>
+          <div class="sub">
+            <a href="services.html#new-helper">Hire a New Helper</a>
+            <a href="services.html#transfer">Transfer Helper</a>
+            <a href="services.html#handover">Free Doorstep Handover</a>
+            <a href="services.html#replacement">Free Replacement</a>
+            <a href="services.html#paperwork">Work Permit &amp; Insurance</a>
+          </div></li>
+        <li><a href="fees.html">Fees &amp; Packages</a></li>
+        <li class="has-sub"><a href="guide.html">Employer Guide</a>
+          <div class="sub">
+            <a href="guide.html#process">Hiring Process</a>
+            <a href="guide.html#faq">FAQ</a>
+          </div></li>
+        <li class="has-sub"><a href="contact.html" aria-current="page">Contact</a>
+          <div class="sub">
+            <a href="contact.html">Contact Us</a>
+            <a href="enquire.html">Enquiry Form</a>
+          </div></li>
+        <li><a class="nav-cta" href="https://wa.me/6593757030">WhatsApp</a></li>
+      </ul>
+    </nav>
+  </div></header>
+
+  <main id="main">
+    <div class="page-hero"><div class="wrap"><p class="eyebrow">Enquiry form</p><h1>Tell us what your family needs</h1><p class="lead">Fill in the form and send it to us by WhatsApp or email. We'll reply with suitable helpers.</p></div></div>
+    <section><div class="wrap enquire">
+      <form id="enquiry-form" class="card enquiry-form" novalidate>
+        <div class="grid-2">
+          <div class="field"><label for="f-name">Your name <span class="req">*</span></label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Phone / WhatsApp <span class="req">*</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+          <div class="field"><label for="f-helper">Helper ID (if you have one in mind)</label><input id="f-helper" name="helper" placeholder="e.g. KD-1824"></div>
+          <div class="field"><label for="f-type">Type of helper</label><select id="f-type" name="type"><option value="">No preference</option><option value="Fresh">Fresh</option><option value="Experienced">Experienced</option><option value="Transfer">Transfer</option></select></div>
+          <div class="field"><label for="f-start">When do you need a helper?</label><select id="f-start" name="start"><option value="">Not sure yet</option><option value="As soon as possible">As soon as possible</option><option value="Within 1 month">Within 1 month</option><option value="1–3 months">1–3 months</option><option value="More than 3 months">More than 3 months</option></select></div>
+          <div class="field"><label for="f-household">Household</label><select id="f-household" name="household"><option value="">Select</option><option value="Condo">Condo</option><option value="HDB">HDB</option><option value="Landed">Landed</option><option value="Other">Other</option></select></div>
+          <div class="field"><label for="f-people">Number of people at home</label><input id="f-people" name="people" inputmode="numeric" placeholder="e.g. 4"></div>
+        </div>
+        <fieldset class="field">
+          <legend>Help needed</legend>
+          <div class="checks">
+            <label><input type="checkbox" name="needs" value="Childcare"> Childcare</label>
+            <label><input type="checkbox" name="needs" value="Infant care"> Infant care</label>
+            <label><input type="checkbox" name="needs" value="Eldercare"> Eldercare</label>
+            <label><input type="checkbox" name="needs" value="Cooking"> Cooking</label>
+            <label><input type="checkbox" name="needs" value="Pets"> Pets</label>
+            <label><input type="checkbox" name="needs" value="Housekeeping"> Housekeeping</label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="f-message">Anything else we should know?</label><textarea id="f-message" name="message" rows="5" placeholder="e.g. ages of children, elderly care needs, dietary requirements, pets"></textarea></div>
+        <p class="muted small">Please don't include NRIC, passport or other identity numbers. Your details are only used to reply to your enquiry.</p>
+        <p id="form-error" class="form-error" role="alert" hidden></p>
+        <div class="btns" style="margin-top:6px">
+          <button type="submit" class="btn btn-wa" data-via="whatsapp">Send via WhatsApp</button>
+          <button type="submit" class="btn" data-via="email">Send via Email</button>
+        </div>
+        <p class="muted small" style="margin-top:14px">Your WhatsApp or email app will open with your enquiry filled in. Just tap send.</p>
+      </form>
+      <aside class="card">
+        <h3>Prefer to talk?</h3>
+        <p class="muted">WhatsApp: <a href="https://wa.me/6593757030">9375 7030</a><br>Email: <a href="mailto:hello@kindomestic.com">hello@kindomestic.com</a></p>
+        <p class="muted" style="margin:0">Kin Domestic Pte. Ltd.<br>EA Licence No. 26C3706</p>
+      </aside>
+    </div></section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap">
+    <div class="cols">
+      <div><span class="logo-f"><img src="images/logo.png" alt="Kin Domestic" width="613" height="450"></span>
+        <p>Care that feels like kin.<br>EA Licence No. 26C3706</p></div>
+      <div><h4>Find a Helper</h4><a href="biodata.html?type=fresh">Fresh</a><a href="biodata.html?type=experienced">Experienced</a><a href="biodata.html?type=transfer">Transfer</a><a href="biodata.html">All biodata</a></div>
+      <div><h4>Company</h4><a href="about.html">About Us</a><a href="services.html">Services</a><a href="fees.html">Fees &amp; Packages</a><a href="guide.html">Employer Guide</a></div>
+      <div><h4>Contact</h4><a href="https://wa.me/6593757030">WhatsApp 9375 7030</a><a href="mailto:hello@kindomestic.com">hello@kindomestic.com</a><a href="enquire.html">Enquiry form</a><a href="contact.html">Contact us</a></div>
+    </div>
+    <div class="legal"><span>Copyright &copy; 2026 Kin Domestic Pte. Ltd. All Rights Reserved.</span><span>EA Licence No. 26C3706</span></div>
+  </div></footer>
+  <script src="js/site.js?v=4"></script>
+  <script src="js/config.js?v=4"></script>
+  <script src="js/enquire.js?v=4"></script>
+</body>
+</html>

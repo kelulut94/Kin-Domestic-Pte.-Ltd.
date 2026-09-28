@@ -11,15 +11,19 @@ Static website for Kin Domestic Pte. Ltd. No build step; plain HTML, CSS and Jav
 | `services.html` | Services (new helper, transfer, handover, replacement, paperwork) |
 | `fees.html` | Fees & Packages (Myanmar fresh/experienced and local transfer) |
 | `guide.html` | Employer Guide: hiring process and FAQ |
-| `contact.html` | Contact (WhatsApp) |
+| `contact.html` | Contact (WhatsApp, email) |
+| `enquire.html` | Enquiry form: composes the enquiry and opens WhatsApp or email (no server; accepts `?helper=<id>`) |
 | `biodata.html` | Filterable grid of available helpers; accepts `?type=`, `?nationality=` and `?skill=` to pre-select filters |
 | `helper.html` | Single helper profile, loaded via `helper.html?id=<id>` |
 | `data/helpers.json` | Helper biodata (the only file to edit when adding/removing helpers) |
 | `images/helpers/` | Helper photos (`placeholder.svg` is used by the sample entries) |
 | `images/logo.png`, `images/hero.jpg` | Logo and home page photo |
+| `videos/helpers/` | Optional helper introduction videos (MP4, under 20 MB) |
+| `docs/helper-profile-checklist.md` | What to provide when adding a helper |
 | `css/styles.css` | Site styles (brand colours: plum `#824C4C`, dusty rose `#A77B7C`, blush `#E8C8C0`, cream `#FDF6F1`, rust `#B5533C`) |
-| `js/config.js` | Site settings: **WhatsApp number** and data file path |
+| `js/config.js` | Site settings: **WhatsApp number**, **email** and data file path |
 | `js/site.js` | Mobile menu toggle (all pages) |
+| `js/enquire.js` | Enquiry form |
 | `js/helpers-common.js`, `js/biodata.js`, `js/helper.js` | Biodata page scripts |
 | `sitemap.xml` | Sitemap for https://www.kindomestic.com |
 | `CNAME` | Custom domain for GitHub Pages (`www.kindomestic.com`) |
@@ -74,7 +78,7 @@ Both pages display: *"Biodata is shared with the helper's consent. Contact us fo
 
 1. Replace the three `SAMPLE-00x` entries in `data/helpers.json` with real, consented profiles.
 
-The agency WhatsApp number (+65 9375 7030) is set in `js/config.js`; change it there if it ever changes.
+The agency WhatsApp number (+65 9375 7030) and email (hello@kindomestic.com) are set in `js/config.js` and also appear in the header/footer of every page.
 
 ### Adding a helper
 
@@ -100,6 +104,8 @@ Add an object to the `helpers` array in `data/helpers.json`:
 }
 ```
 
+- `video` (optional): a local MP4 such as `"videos/helpers/KD-0001.mp4"`, or a YouTube link (use "Unlisted"). Shows an
+  "Introduction video" section on the profile and a "▶ Video" badge on the card.
 - `status`: `available` | `reserved` | `placed`
 - `type`: `fresh` | `transfer` | `experienced`
 - Store **age only**, not date of birth.
