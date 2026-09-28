@@ -1,28 +1,25 @@
 {
   "_note": "SAMPLE DATA ONLY. These helpers are fictional and exist to test the layout. Do NOT add passport numbers, FIN, work permit numbers, exact dates of birth, addresses or contact details to this file.",
   "helpers": [
-    
-    {
+        {
       "id": "jlo",
-      "sample": true,
       "status": "available",
-      "firstName": "Jennifer Lopez",
-      "age": 29,
-      "nationality": "USA",
+      "firstName": "Thandar",
+      "age": 30,
+      "nationality": "Myanmar",
       "type": "experienced",
-      "photo": "images/helpers/placeholder.svg",
+      "photo": "images/helpers/KD-0001.jpg",
       "keySkills": ["childcare", "cooking", "housekeeping"],
       "particulars": {
         "height": "155 cm",
-        "weight": "52 kg",
-        "religion": "Christian",
+        "weight": "50 kg",
+        "religion": "Buddhist",
         "maritalStatus": "Single",
         "children": 0,
         "education": "High school"
       },
       "experience": [
-        { "country": "Singapore", "years": "2019 – 2023", "duties": "Cared for two children (3 and 6), cooking, general housework." },
-        { "country": "Hong Kong", "years": "2016 – 2019", "duties": "Housekeeping and cooking for a family of four." }
+        { "country": "Singapore", "years": "2020 – 2024", "duties": "Cared for 2 children, cooking, housework." }
       ],
       "skills": {
         "childcare": "Experienced",
@@ -31,15 +28,15 @@
         "pets": "Some experience",
         "housekeeping": "Experienced"
       },
-      "languages": ["English (good)", "Tagalog (native)"],
+      "languages": ["Burmese (native)", "English (basic)"],
       "preferences": {
         "restDays": "1 per week",
         "handleDogs": true,
         "handleCats": true,
-        "otherNotes": "Prefers a family with young children."
+        "otherNotes": ""
       },
       "availability": "Available immediately",
-      "remarks": "SAMPLE PROFILE. Cheerful and reliable; strong references from previous employers."
+      "remarks": "Cheerful and hardworking."
     },
     {
       "id": "SAMPLE-002",
