@@ -14,7 +14,7 @@ Static website for Kin Domestic Pte. Ltd. No build step; plain HTML, CSS and Jav
 | `css/styles.css` | Site styles |
 | `js/config.js` | Site settings: **WhatsApp number** and data file path |
 | `js/helpers-common.js`, `js/biodata.js`, `js/helper.js` | Page scripts |
-| `sitemap.xml` | Sitemap (replace `https://www.example.com` with the live domain) |
+| `sitemap.xml` | Sitemap for https://www.kindomestic.com |
 
 ## Running locally
 
@@ -48,9 +48,9 @@ Both pages display: *"Biodata is shared with the helper's consent. Contact us fo
 
 ### Before going live
 
-1. Set the agency's WhatsApp number in `js/config.js` (digits only, with country code, e.g. `6591234567`).
-2. Replace the three `SAMPLE-00x` entries in `data/helpers.json` with real, consented profiles.
-3. Update the domain in `sitemap.xml`.
+1. Replace the three `SAMPLE-00x` entries in `data/helpers.json` with real, consented profiles.
+
+The agency WhatsApp number (+65 9735 7030) is set in `js/config.js`; change it there if it ever changes.
 
 ### Adding a helper
 

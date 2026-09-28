@@ -1,6 +1,5 @@
-// Site-wide settings. Replace the placeholder WhatsApp number with the
-// agency's business number (digits only, country code first, no "+").
+// Site-wide settings. WhatsApp number: digits only, country code first, no "+".
 window.KIN_CONFIG = {
-  whatsappNumber: "6500000000", // PLACEHOLDER: set the agency's WhatsApp number
+  whatsappNumber: "6597357030", // +65 9735 7030
   helpersDataUrl: "data/helpers.json"
 };
