@@ -1,25 +1,39 @@
 {
   "_note": "SAMPLE DATA ONLY. These helpers are fictional and exist to test the layout. Do NOT add passport numbers, FIN, work permit numbers, exact dates of birth, addresses or contact details to this file.",
   "helpers": [
-        {
-      "id": "KD-1824",
+    {
+      "id": "SAMPLE-001",
+      "sample": true,
       "status": "available",
-      "firstName": "Jennifer Lopez",
-      "age": 30,
-      "nationality": "Myanmar",
+      "firstName": "Sample Ana",
+      "age": 29,
+      "nationality": "Philippines",
       "type": "experienced",
-      "photo": "images/helpers/KD-0001.jpg",
-      "keySkills": ["childcare", "cooking", "housekeeping"],
+      "photo": "images/helpers/placeholder.svg",
+      "keySkills": [
+        "childcare",
+        "cooking",
+        "housekeeping"
+      ],
       "particulars": {
         "height": "155 cm",
-        "weight": "50 kg",
-        "religion": "Buddhist",
+        "weight": "52 kg",
+        "religion": "Christian",
         "maritalStatus": "Single",
         "children": 0,
         "education": "High school"
       },
       "experience": [
-        { "country": "Singapore", "years": "2020 – 2024", "duties": "Cared for 2 children, cooking, housework." }
+        {
+          "country": "Singapore",
+          "years": "2019 – 2023",
+          "duties": "Cared for two children (3 and 6), cooking, general housework."
+        },
+        {
+          "country": "Hong Kong",
+          "years": "2016 – 2019",
+          "duties": "Housekeeping and cooking for a family of four."
+        }
       ],
       "skills": {
         "childcare": "Experienced",
@@ -28,15 +42,18 @@
         "pets": "Some experience",
         "housekeeping": "Experienced"
       },
-      "languages": ["Burmese (native)", "English (basic)"],
+      "languages": [
+        "English (good)",
+        "Tagalog (native)"
+      ],
       "preferences": {
         "restDays": "1 per week",
         "handleDogs": true,
         "handleCats": true,
-        "otherNotes": ""
+        "otherNotes": "Prefers a family with young children."
       },
       "availability": "Available immediately",
-      "remarks": "Cheerful and hardworking."
+      "remarks": "SAMPLE PROFILE. Cheerful and reliable; strong references from previous employers."
     },
     {
       "id": "SAMPLE-002",
@@ -47,7 +64,11 @@
       "nationality": "Indonesia",
       "type": "transfer",
       "photo": "images/helpers/placeholder.svg",
-      "keySkills": ["eldercare", "cooking", "pets"],
+      "keySkills": [
+        "eldercare",
+        "cooking",
+        "pets"
+      ],
       "particulars": {
         "height": "150 cm",
         "weight": "50 kg",
@@ -57,7 +78,11 @@
         "education": "Secondary school"
       },
       "experience": [
-        { "country": "Singapore", "years": "2021 – present", "duties": "Caring for an elderly grandmother (wheelchair user), cooking Chinese and Malay dishes." }
+        {
+          "country": "Singapore",
+          "years": "2021 – present",
+          "duties": "Caring for an elderly grandmother (wheelchair user), cooking Chinese and Malay dishes."
+        }
       ],
       "skills": {
         "childcare": "Some experience",
@@ -66,7 +91,11 @@
         "pets": "Experienced",
         "housekeeping": "Experienced"
       },
-      "languages": ["Bahasa Indonesia (native)", "English (basic)", "Malay (good)"],
+      "languages": [
+        "Bahasa Indonesia (native)",
+        "English (basic)",
+        "Malay (good)"
+      ],
       "preferences": {
         "restDays": "2 per month",
         "handleDogs": true,
@@ -85,7 +114,11 @@
       "nationality": "Myanmar",
       "type": "fresh",
       "photo": "images/helpers/placeholder.svg",
-      "keySkills": ["childcare", "housekeeping", "cooking"],
+      "keySkills": [
+        "childcare",
+        "housekeeping",
+        "cooking"
+      ],
       "particulars": {
         "height": "152 cm",
         "weight": "48 kg",
@@ -102,7 +135,10 @@
         "pets": "Willing to learn",
         "housekeeping": "Trained at centre"
       },
-      "languages": ["Burmese (native)", "English (basic)"],
+      "languages": [
+        "Burmese (native)",
+        "English (basic)"
+      ],
       "preferences": {
         "restDays": "1 per week",
         "handleDogs": false,
