@@ -205,8 +205,8 @@ table.pf { margin-top: 12px; }
 .site-footer h4 { color: #fff; margin: 0 0 10px; font-size: 15px; }
 .site-footer a { color: #d9cfcc; text-decoration: none; display: block; padding: 2px 0; }
 .site-footer a:hover { color: #fff; }
-.site-footer .logo-f { background: var(--cream); display: inline-block; padding: 8px 12px; border-radius: 12px; margin-bottom: 12px; }
-.site-footer .logo-f img { height: 60px; width: auto; }
+.site-footer .logo-f { display: inline-block; margin-bottom: 12px; }
+.site-footer .logo-f img { height: 84px; width: auto; }
 .site-footer .legal { border-top: 1px solid #4a3f3d; margin-top: 30px; padding-top: 16px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 
 /* Responsive */

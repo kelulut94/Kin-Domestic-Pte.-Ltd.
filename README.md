@@ -16,7 +16,7 @@ Static website for Kin Domestic Pte. Ltd. No build step; plain HTML, CSS and Jav
 | `helper.html` | Single helper profile, loaded via `helper.html?id=<id>` |
 | `data/helpers.json` | Helper biodata (the only file to edit when adding/removing helpers) |
 | `images/helpers/` | Helper photos (`placeholder.svg` is used by the sample entries) |
-| `images/logo.png`, `images/hero.jpg` | Logo and home page photo |
+| `images/logo.png`, `images/logo-light.png`, `images/hero.jpg` | Logo (for light backgrounds), light logo (for dark backgrounds such as the footer) and home page photo |
 | `videos/helpers/` | Optional helper introduction videos (MP4, under 20 MB) |
 | `docs/helper-profile-checklist.md` | What to provide when adding a helper |
 | `css/styles.css` | Site styles (brand colours: plum `#824C4C`, dusty rose `#A77B7C`, blush `#E8C8C0`, cream `#FDF6F1`, rust `#B5533C`) |
