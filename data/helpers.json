@@ -2,9 +2,9 @@
   "_note": "SAMPLE DATA ONLY. These helpers are fictional and exist to test the layout. Do NOT add passport numbers, FIN, work permit numbers, exact dates of birth, addresses or contact details to this file.",
   "helpers": [
         {
-      "id": "jlo",
+      "id": "KD-1824",
       "status": "available",
-      "firstName": "Thandar",
+      "firstName": "Jennifer Lopez",
       "age": 30,
       "nationality": "Myanmar",
       "type": "experienced",
