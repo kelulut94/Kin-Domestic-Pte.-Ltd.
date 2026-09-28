@@ -40,6 +40,7 @@ DNS is managed at GoDaddy:
 ## Running locally
 
 Every page shares the same header and footer; when changing the menu, contact number or footer, update all `.html` files.
+After changing CSS or JS, bump the `?v=` number on the `<link>`/`<script>` tags so browsers load the new version.
 
 The biodata pages load `data/helpers.json` with `fetch`, which browsers block for `file://` URLs.
 Serve the folder over HTTP instead:
