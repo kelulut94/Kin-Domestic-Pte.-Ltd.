@@ -194,6 +194,8 @@ table.pf { margin-top: 12px; }
 .field .checks label { font-weight: 400; margin: 0; }
 .req { color: var(--rust); }
 .small { font-size: .88rem; }
+.zoho-form { display: block; width: 100%; height: 1150px; border: 0; margin: 8px 0 12px; background: #fff; }
+@media (max-width: 600px) { .zoho-form { height: 1500px; } }
 .form-error { background: #fdecea; color: #8a2a1c; padding: 10px 14px; border-radius: 10px; }
 .profile__aside .btn-ghost { text-align: center; }
 

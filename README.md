@@ -11,7 +11,7 @@ Static website for Kin Domestic Pte. Ltd. No build step; plain HTML, CSS and Jav
 | `fees.html` | Fees & Packages (Myanmar fresh/experienced and local transfer) |
 | `guide.html` | Employer Guide: hiring process and FAQ |
 | `contact.html` | Contact (WhatsApp, email) |
-| `enquire.html` | Enquiry form: composes the enquiry and opens WhatsApp or email (no server; accepts `?helper=<id>`) |
+| `enquire.html` | Enquiry form: embedded Zoho Form (hellokindo1 / KinDomesticEnquiry); submissions are emailed to hello@kindomestic.com by Zoho |
 | `biodata.html` | Filterable grid of available helpers; accepts `?type=`, `?nationality=` and `?skill=` to pre-select filters |
 | `helper.html` | Single helper profile, loaded via `helper.html?id=<id>` |
 | `data/helpers.json` | Helper biodata (the only file to edit when adding/removing helpers) |
@@ -22,7 +22,7 @@ Static website for Kin Domestic Pte. Ltd. No build step; plain HTML, CSS and Jav
 | `css/styles.css` | Site styles (brand colours: plum `#824C4C`, dusty rose `#A77B7C`, blush `#E8C8C0`, cream `#FDF6F1`, rust `#B5533C`) |
 | `js/config.js` | Site settings: **WhatsApp number**, **email** and data file path |
 | `js/site.js` | Mobile menu toggle (all pages) |
-| `js/enquire.js` | Enquiry form |
+| `js/zoho-embed.js` | Auto-resizes the embedded Zoho form |
 | `js/helpers-common.js`, `js/biodata.js`, `js/helper.js` | Biodata page scripts |
 | `sitemap.xml` | Sitemap for https://www.kindomestic.com |
 | `CNAME` | Custom domain for GitHub Pages (`www.kindomestic.com`) |
