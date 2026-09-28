@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360" role="img" aria-label="Photo placeholder">
+  <rect width="300" height="360" fill="#e8eef3"/>
+  <circle cx="150" cy="140" r="62" fill="#b8c7d4"/>
+  <path d="M40 360c0-70 50-120 110-120s110 50 110 120z" fill="#b8c7d4"/>
+  <text x="150" y="340" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#6b7f90">SAMPLE</text>
+</svg>

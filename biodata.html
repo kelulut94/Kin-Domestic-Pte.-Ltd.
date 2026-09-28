@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Helper Biodata | Kin Domestic</title>
+  <meta name="description" content="Browse biodata of domestic helpers currently available through Kin Domestic Pte. Ltd.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Kin Domestic</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biodata.html" aria-current="page">Helper Biodata</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Helper Biodata</h1>
+    <p class="muted">Browse helpers who are currently available. Select a profile to view full details.</p>
+
+    <p class="consent-note">Biodata is shared with the helper's consent. Contact us for full details.</p>
+
+    <form id="filters" class="filters" aria-label="Filter helpers">
+      <div>
+        <label for="filter-type">Type</label>
+        <select id="filter-type" name="type">
+          <option value="">All types</option>
+          <option value="fresh">Fresh</option>
+          <option value="transfer">Transfer</option>
+          <option value="experienced">Experienced</option>
+        </select>
+      </div>
+      <div>
+        <label for="filter-nationality">Nationality</label>
+        <select id="filter-nationality" name="nationality">
+          <option value="">All nationalities</option>
+        </select>
+      </div>
+      <fieldset>
+        <legend>Skills</legend>
+        <div class="checks">
+          <label><input type="checkbox" name="skill" value="childcare"> Childcare</label>
+          <label><input type="checkbox" name="skill" value="eldercare"> Eldercare</label>
+          <label><input type="checkbox" name="skill" value="cooking"> Cooking</label>
+          <label><input type="checkbox" name="skill" value="pets"> Pets</label>
+        </div>
+      </fieldset>
+      <div>
+        <button type="reset" class="button">Clear filters</button>
+      </div>
+    </form>
+
+    <p id="result-count" class="result-count" aria-live="polite"></p>
+    <div id="helper-grid" class="helper-grid">
+      <p class="empty">Loading helpers…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; Kin Domestic Pte. Ltd.</div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/helpers-common.js"></script>
+  <script src="js/biodata.js"></script>
+</body>
+</html>
