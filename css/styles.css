@@ -36,7 +36,7 @@ section { padding: 72px 0; }
 .topbar a { color: #fff; text-decoration: none; font-weight: 600; }
 .site-header { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20; }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 10px; padding-bottom: 10px; }
-.logo img { height: 78px; width: auto; mix-blend-mode: multiply; }
+.logo img { height: 78px; width: auto; }
 .menu-toggle { display: none; background: none; border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; font: inherit; font-weight: 600; color: var(--plum); cursor: pointer; }
 .site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 2px; align-items: center; flex-wrap: wrap; }
 .site-nav li { position: relative; }
@@ -204,7 +204,7 @@ table.pf { margin-top: 12px; }
 .site-footer a { color: #d9cfcc; text-decoration: none; display: block; padding: 2px 0; }
 .site-footer a:hover { color: #fff; }
 .site-footer .logo-f { background: #fff; display: inline-block; padding: 8px 12px; border-radius: 12px; margin-bottom: 12px; }
-.site-footer .logo-f img { height: 60px; width: auto; mix-blend-mode: multiply; }
+.site-footer .logo-f img { height: 60px; width: auto; }
 .site-footer .legal { border-top: 1px solid #4a3f3d; margin-top: 30px; padding-top: 16px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 
 /* Responsive */
