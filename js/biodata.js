@@ -16,7 +16,7 @@
       '<article class="helper-card">' +
         '<a class="helper-card__link" href="' + H.escapeHtml(href) + '">' +
           '<img class="helper-card__photo" src="' + H.escapeHtml(h.photo || "images/helpers/placeholder.svg") +
-            '" alt="Photo of ' + H.escapeHtml(h.firstName) + '" loading="lazy">' +
+            '" onerror="this.onerror=null;this.src=\'images/helpers/placeholder.svg\'" alt="Photo of ' + H.escapeHtml(h.firstName) + '" loading="lazy">' +
           '<div class="helper-card__body">' +
             '<p class="helper-card__id">' + H.escapeHtml(h.id) + "</p>" +
             '<h2 class="helper-card__name">' + H.escapeHtml(h.firstName) + "</h2>" +

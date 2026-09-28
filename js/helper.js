@@ -59,7 +59,7 @@
       '<div class="profile">' +
         '<div class="profile__aside">' +
           '<img class="profile__photo" src="' + H.escapeHtml(h.photo || "images/helpers/placeholder.svg") +
-            '" alt="Photo of ' + H.escapeHtml(h.firstName) + '">' +
+            '" onerror="this.onerror=null;this.src=\'images/helpers/placeholder.svg\'" alt="Photo of ' + H.escapeHtml(h.firstName) + '">' +
           statusNote +
           (h.status === "available"
             ? '<a class="button button--whatsapp" target="_blank" rel="noopener" href="' +
