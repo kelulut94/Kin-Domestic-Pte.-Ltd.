@@ -15,6 +15,20 @@ Static website for Kin Domestic Pte. Ltd. No build step; plain HTML, CSS and Jav
 | `js/config.js` | Site settings: **WhatsApp number** and data file path |
 | `js/helpers-common.js`, `js/biodata.js`, `js/helper.js` | Page scripts |
 | `sitemap.xml` | Sitemap for https://www.kindomestic.com |
+| `CNAME` | Custom domain for GitHub Pages (`www.kindomestic.com`) |
+
+## Hosting
+
+Hosted on GitHub Pages with the custom domain `www.kindomestic.com` (set by the `CNAME` file).
+DNS is managed at GoDaddy:
+
+| Type | Name | Value |
+| --- | --- | --- |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | kelulut94.github.io |
 
 ## Running locally
 
