@@ -1,13 +1,14 @@
 {
   "_note": "SAMPLE DATA ONLY. These helpers are fictional and exist to test the layout. Do NOT add passport numbers, FIN, work permit numbers, exact dates of birth, addresses or contact details to this file.",
   "helpers": [
+    
     {
-      "id": "SAMPLE-001",
+      "id": "jlo",
       "sample": true,
       "status": "available",
-      "firstName": "Sample Ana",
+      "firstName": "Jennifer Lopez",
       "age": 29,
-      "nationality": "Philippines",
+      "nationality": "USA",
       "type": "experienced",
       "photo": "images/helpers/placeholder.svg",
       "keySkills": ["childcare", "cooking", "housekeeping"],
