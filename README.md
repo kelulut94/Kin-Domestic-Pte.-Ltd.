@@ -8,7 +8,6 @@ Static website for Kin Domestic Pte. Ltd. No build step; plain HTML, CSS and Jav
 | --- | --- |
 | `index.html` | Home page |
 | `about.html` | About Us |
-| `services.html` | Services (new helper, transfer, handover, replacement, paperwork) |
 | `fees.html` | Fees & Packages (Myanmar fresh/experienced and local transfer) |
 | `guide.html` | Employer Guide: hiring process and FAQ |
 | `contact.html` | Contact (WhatsApp, email) |
