@@ -23,6 +23,7 @@ Static website for Kin Domestic Pte. Ltd. No build step; plain HTML, CSS and Jav
 | `js/config.js` | Site settings: **WhatsApp number**, **email** and data file path |
 | `js/site.js` | Mobile menu toggle (all pages) |
 | `js/zoho-embed.js` | Auto-resizes the embedded Zoho form |
+| `js/chatbot.js` | FAQ chat bubble on every page (no AI; answers are in the `TOPICS` list at the top of the file) |
 | `js/helpers-common.js`, `js/biodata.js`, `js/helper.js` | Biodata page scripts |
 | `sitemap.xml` | Sitemap for https://www.kindomestic.com |
 | `CNAME` | Custom domain for GitHub Pages (`www.kindomestic.com`) |
