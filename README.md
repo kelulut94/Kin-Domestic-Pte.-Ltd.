@@ -13,6 +13,7 @@ Static website for Kin Domestic Pte. Ltd. No build step; plain HTML, CSS and Jav
 | `contact.html` | Contact (WhatsApp, email) |
 | `enquire.html` | Enquiry form: embedded Zoho Form (hellokindo1 / KinDomesticEnquiry); submissions are emailed to hello@kindomestic.com by Zoho |
 | `terms.html` | Terms & Conditions (linked in every footer) |
+| `privacy.html` | Privacy Policy (PDPA); Data Protection Officer: hello@kindomestic.com |
 | `biodata.html` | Filterable grid of available helpers; accepts `?type=`, `?nationality=` and `?skill=` to pre-select filters |
 | `helper.html` | Single helper profile, loaded via `helper.html?id=<id>` |
 | `data/helpers.json` | Helper biodata (the only file to edit when adding/removing helpers) |
