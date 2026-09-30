@@ -47,6 +47,14 @@
 
     document.title = h.id + " – " + h.firstName + " | Kin Domestic";
 
+    // Keep sample/test profiles out of search results.
+    if (h.sample) {
+      var robots = document.createElement("meta");
+      robots.name = "robots";
+      robots.content = "noindex";
+      document.head.appendChild(robots);
+    }
+
     var experience = (h.experience || []).length
       ? "<ul class=\"experience\">" + h.experience.map(function (e) {
           return "<li><strong>" + H.escapeHtml(e.country) + "</strong>" +
