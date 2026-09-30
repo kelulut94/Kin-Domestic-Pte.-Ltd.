@@ -21,6 +21,7 @@ Static website for Kin Domestic Pte. Ltd. No build step; plain HTML, CSS and Jav
 | `images/logo.png`, `images/logo-light.png`, `images/hero.jpg` | Logo (for light backgrounds), light logo (for dark backgrounds such as the footer) and home page photo |
 | `videos/helpers/` | Optional helper introduction videos (MP4, under 20 MB) |
 | `docs/helper-profile-checklist.md` | What to provide when adding a helper |
+| `docs/social-media-setup.md` | How to set up the Facebook Page and Instagram account, with ready-to-paste bios |
 | `css/styles.css` | Site styles (brand colours: plum `#824C4C`, dusty rose `#A77B7C`, blush `#E8C8C0`, cream `#FDF6F1`, rust `#B5533C`) |
 | `js/config.js` | Site settings: **WhatsApp number**, **email** and data file path |
 | `js/site.js` | Mobile menu toggle (all pages) |
