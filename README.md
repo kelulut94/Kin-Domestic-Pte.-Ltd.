@@ -4,6 +4,8 @@ Static website for Kin Domestic Pte. Ltd. No build step; plain HTML, CSS and Jav
 
 ## Structure
 
+> `platform/` is a separate product (a subscription helper marketplace for agencies, a Node.js app). It is not part of this website; see `platform/README.md`.
+
 | Path | Purpose |
 | --- | --- |
 | `index.html` | Home page |
